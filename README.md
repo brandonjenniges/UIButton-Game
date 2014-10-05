@@ -20,7 +20,7 @@ USAGE
 DISPLAY
 -----
 ```objc
-GameButton *gameButton;
+GameButton *gameButton = [GameButton new];
 
 [gameButton correct:^{
   //Do something following animation
