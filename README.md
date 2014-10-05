@@ -33,6 +33,10 @@ GameButton *gameButton = [GameButton new];
 
 ```
 
+DEMO
+-----
+![GameButton](demo.gif?raw=true)
+
 LICENSE
 -------------------
 
