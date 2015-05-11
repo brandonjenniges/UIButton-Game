@@ -9,8 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet GameButton *correctButton;
-@property (weak, nonatomic) IBOutlet GameButton *wrongButton;
+@property (weak, nonatomic) IBOutlet BLJGameButton *correctButton;
+@property (weak, nonatomic) IBOutlet BLJGameButton *wrongButton;
 
 @end
 
@@ -26,13 +26,13 @@
 	// Dispose of any resources that can be recreated.
 }
 
-- (IBAction)correctGuess:(GameButton *)sender {
+- (IBAction)correctGuess:(BLJGameButton *)sender {
 	[sender correct: ^{
 	    NSLog(@"Correct guess!");
 	}];
 }
 
-- (IBAction)incorrectGuess:(GameButton *)sender {
+- (IBAction)incorrectGuess:(BLJGameButton *)sender {
 	[sender incorrect: ^{
 	    NSLog(@"Incorrect guess!");
 	}];

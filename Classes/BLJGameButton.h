@@ -1,6 +1,5 @@
 //
-//  GameButton.h
-//  NFL College Trivia
+//  BLJGameButton.h
 //
 //  Created by Brandon Jenniges on 10/5/14.
 //  Copyright (c) 2014 Brandon Jenniges. All rights reserved.
@@ -8,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameButton : UIButton
+@interface BLJGameButton : UIButton
 
 - (void)correct;
 

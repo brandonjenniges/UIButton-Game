@@ -14,7 +14,7 @@
 		FBE3BA921B005AA100BC8173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE3BA911B005AA100BC8173 /* Images.xcassets */; };
 		FBE3BA951B005AA100BC8173 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE3BA931B005AA100BC8173 /* LaunchScreen.xib */; };
 		FBE3BAA11B005AA100BC8173 /* GameButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BAA01B005AA100BC8173 /* GameButtonTests.m */; };
-		FBE3BAAD1B005AE200BC8173 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BAAC1B005AE200BC8173 /* GameButton.m */; };
+		FBE3BAAD1B005AE200BC8173 /* BLJGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		FBE3BA9A1B005AA100BC8173 /* GameButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE3BA9F1B005AA100BC8173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE3BAA01B005AA100BC8173 /* GameButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameButtonTests.m; sourceTree = "<group>"; };
-		FBE3BAAB1B005AE200BC8173 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
-		FBE3BAAC1B005AE200BC8173 /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
+		FBE3BAAB1B005AE200BC8173 /* BLJGameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLJGameButton.h; sourceTree = "<group>"; };
+		FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLJGameButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		FBE3BAAA1B005AE200BC8173 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FBE3BAAB1B005AE200BC8173 /* GameButton.h */,
-				FBE3BAAC1B005AE200BC8173 /* GameButton.m */,
+				FBE3BAAB1B005AE200BC8173 /* BLJGameButton.h */,
+				FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE3BA8D1B005AA100BC8173 /* ViewController.m in Sources */,
-				FBE3BAAD1B005AE200BC8173 /* GameButton.m in Sources */,
+				FBE3BAAD1B005AE200BC8173 /* BLJGameButton.m in Sources */,
 				FBE3BA8A1B005AA100BC8173 /* AppDelegate.m in Sources */,
 				FBE3BA871B005AA100BC8173 /* main.m in Sources */,
 			);

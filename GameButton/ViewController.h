@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GameButton.h"
+#import "BLJGameButton.h"
 
 @interface ViewController : UIViewController
 

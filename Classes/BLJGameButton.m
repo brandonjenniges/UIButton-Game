@@ -1,25 +1,24 @@
 //
-//  GameButton.m
-//  NFL College Trivia
+//  BLJGameButton.m
 //
 //  Created by Brandon Jenniges on 10/5/14.
 //  Copyright (c) 2014 Brandon Jenniges. All rights reserved.
 //
 
-#import "GameButton.h"
+#import "BLJGameButton.h"
 
-@interface GameButton ()
+@interface BLJGameButton ()
 @property (nonatomic, strong) void (^completionHandler)(NSString *, NSInteger);
 @end
 
-@implementation GameButton
+@implementation BLJGameButton
 
 - (void)correct {
 	[self correct:nil];
 }
 
 - (void)correct:(void (^)())onCompletion {
-	[self setTitleColor:[GameButton correctColor] forState:UIControlStateNormal];
+	[self setTitleColor:[BLJGameButton correctColor] forState:UIControlStateNormal];
 
 	float animationDuration = 1.0;
 
@@ -37,7 +36,7 @@
 		if (onCompletion) {
 		    onCompletion();
 		}
-		[self setTitleColor:[GameButton defaultColor] forState:UIControlStateNormal];
+		[self setTitleColor:[BLJGameButton defaultColor] forState:UIControlStateNormal];
 	});
 }
 
@@ -46,7 +45,7 @@
 }
 
 - (void)incorrect:(void (^)())onCompletion {
-	[self setTitleColor:[GameButton incorrectColor] forState:UIControlStateNormal];
+	[self setTitleColor:[BLJGameButton incorrectColor] forState:UIControlStateNormal];
 
 	float animationDuration = 1.0;
 	CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
@@ -63,7 +62,7 @@
 		if (onCompletion) {
 		    onCompletion();
 		}
-		[self setTitleColor:[GameButton defaultColor] forState:UIControlStateNormal];
+		[self setTitleColor:[BLJGameButton defaultColor] forState:UIControlStateNormal];
 	});
 }
 
