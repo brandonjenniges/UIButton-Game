@@ -7,17 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <POP/POP.h>
-
 
 @interface GameButton : UIButton
 
--(void)correct;
+- (void)correct;
 
--(void)correct : (void(^)())handler;
+- (void)correct:(void (^)())onCompletion;
 
--(void)incorrect;
+- (void)incorrect;
 
--(void)incorrect : (void(^)())handler;
+- (void)incorrect:(void (^)())onCompletion;
 
 @end
