@@ -18,7 +18,7 @@ There are two ways to use BLJGameButton in your project:
 
 #### Podfile
 ```
-TODO
+pod 'BLJGameButton'
 ```
 
 ### Copying files into project
