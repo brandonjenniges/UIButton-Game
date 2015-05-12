@@ -16,7 +16,7 @@ There are two ways to use BLJGameButton in your project:
 
 [CocoaPods](http://cocoapods.org/) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries in your projects. See the [Get Started](http://cocoapods.org/#get_started) section for more details.
 
-#### Podfile
+### Podfile
 ```
 pod 'BLJGameButton'
 ```
