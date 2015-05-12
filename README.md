@@ -31,11 +31,11 @@ BLJGameButton.m
 ## 1. Import
 ```objc
 
-#import "GameButton.h"
+#import "BLJGameButton.h"
 ```
 ## 2. Implement
 ```objc
-GameButton *gameButton = [GameButton new];
+BLJGameButton *gameButton = [BLJGameButton new];
 
 [gameButton correct:^{
   //Do something following animation
