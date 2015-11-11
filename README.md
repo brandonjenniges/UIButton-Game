@@ -21,7 +21,7 @@ There are two ways to use **UIButton+Game** in your project:
 pod 'BLJGameButton'
 ```
 
-### Copying files into project
+#### Copying files into project
 ```
 UIButton+Game.swift
 ```  
