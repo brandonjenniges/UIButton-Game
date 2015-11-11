@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.brandon-asahi.com'
   s.summary = 'Simple UIButton extension that can be used in a trivia style game.'
   s.authors = { 'Brandon Jenniges' => 'brandon.jenniges@icloud.com' }
-  s.source = { :git => 'https://github.com/steveholt55/BLJGameButton.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/steveholt55/UIButton-Game.git', :tag => s.version }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'Classes/*'
 
