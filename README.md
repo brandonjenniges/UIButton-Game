@@ -2,9 +2,6 @@
 # Overview
 **BLJGameButton** is an Objective-C class that allows you to easily implement buttons for displaying correct/incorrect guesses into a trivia type game.
 
-![GameButton](Resources/demo.gif?raw=true)
-
-
 Installation
 ------------
 
@@ -19,31 +16,34 @@ There are two ways to use BLJGameButton in your project:
 ### Podfile
 ```
 pod 'BLJGameButton'
+
 ```
 
 ### Copying files into project
 ```
-BLJGameButton.h
-BLJGameButton.m
+UIButton+Game.swift
+
 ```  
 # Basic usage
 
 ## 1. Import
-```objc
+```swift
 
 #import "BLJGameButton.h"
 ```
 ## 2. Implement
-```objc
-BLJGameButton *gameButton = [BLJGameButton new];
+```swift
+UIButton *gameButton = [UIButton new];
 
-[gameButton correct:^{
-  //Do something following animation
-}];
+gameButton.correct { () -> () in
+	//Do something following animation
+}
 
-[gameButton incorrect:^{
-  //Do something following animation
-}];
+gameButton.incorrect { () -> () in
+	//Do something following animation
+}
+
 ```
-# License
+License
+-----------
 Distributed under the MIT License.

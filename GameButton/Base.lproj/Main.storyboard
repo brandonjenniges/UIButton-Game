@@ -1,64 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-mG-wrR" customClass="BLJGameButton">
-                                <rect key="frame" x="16" y="140" width="568" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geD-vx-Fhm">
+                                <rect key="frame" x="300" y="228" width="300" height="145"/>
                                 <state key="normal" title="Wrong">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="incorrectGuess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lm5-Zi-2Ti"/>
+                                    <action selector="incorrectButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZh-DM-byw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SN-qw-OkJ" customClass="BLJGameButton">
-                                <rect key="frame" x="16" y="71" width="568" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4A-aT-g21">
+                                <rect key="frame" x="0.0" y="227" width="300" height="145"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="D3M-iZ-lhG"/>
+                                    <constraint firstAttribute="height" constant="145" id="5rH-Eg-R0j"/>
                                 </constraints>
                                 <state key="normal" title="Correct">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="correctGuess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Exl-vw-NhM"/>
+                                    <action selector="correctButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZrZ-sh-f3F"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-Xf-W1B">
+                                <rect key="frame" x="279" y="139" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4SN-qw-OkJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="SNu-26-cxJ"/>
-                            <constraint firstItem="9eD-mG-wrR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gA0-kj-Iee"/>
-                            <constraint firstItem="9eD-mG-wrR" firstAttribute="top" secondItem="4SN-qw-OkJ" secondAttribute="bottom" constant="39" id="grt-yf-kwT"/>
-                            <constraint firstItem="9eD-mG-wrR" firstAttribute="leading" secondItem="4SN-qw-OkJ" secondAttribute="leading" id="i5D-7M-o9d"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9eD-mG-wrR" secondAttribute="bottom" constant="430" id="jPu-we-fmX"/>
-                            <constraint firstItem="4SN-qw-OkJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="51" id="kX9-QM-5hJ"/>
-                            <constraint firstItem="4SN-qw-OkJ" firstAttribute="trailing" secondItem="9eD-mG-wrR" secondAttribute="trailing" id="qTh-Sv-9tr"/>
+                            <constraint firstItem="geD-vx-Fhm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HIO-Ed-FUF"/>
+                            <constraint firstAttribute="trailing" secondItem="geD-vx-Fhm" secondAttribute="trailing" id="QXX-Kd-i2Z"/>
+                            <constraint firstItem="P4A-aT-g21" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ams-M7-7Sc"/>
+                            <constraint firstItem="ZKO-Xf-W1B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bve-eH-vKT"/>
+                            <constraint firstItem="P4A-aT-g21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eTm-ae-N1Q"/>
+                            <constraint firstItem="ZKO-Xf-W1B" firstAttribute="centerY" secondItem="P4A-aT-g21" secondAttribute="centerY" multiplier="0.5" id="fSO-zs-plT"/>
+                            <constraint firstItem="geD-vx-Fhm" firstAttribute="leading" secondItem="P4A-aT-g21" secondAttribute="trailing" id="soo-3f-SLY"/>
+                            <constraint firstItem="P4A-aT-g21" firstAttribute="height" secondItem="geD-vx-Fhm" secondAttribute="height" id="v6D-lk-B6M"/>
+                            <constraint firstItem="P4A-aT-g21" firstAttribute="width" secondItem="geD-vx-Fhm" secondAttribute="width" id="vrn-PG-cLm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="correctButton" destination="4SN-qw-OkJ" id="wa8-zw-WE8"/>
-                        <outlet property="wrongButton" destination="9eD-mG-wrR" id="1rh-PW-8wc"/>
+                        <outlet property="correctButton" destination="P4A-aT-g21" id="0px-az-73q"/>
+                        <outlet property="label" destination="ZKO-Xf-W1B" id="hfT-Rf-oCt"/>
+                        <outlet property="wrongButton" destination="geD-vx-Fhm" id="50a-yG-xA3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
 </document>

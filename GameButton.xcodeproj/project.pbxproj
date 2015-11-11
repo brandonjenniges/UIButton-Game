@@ -7,53 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBE3BA871B005AA100BC8173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BA861B005AA100BC8173 /* main.m */; };
-		FBE3BA8A1B005AA100BC8173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BA891B005AA100BC8173 /* AppDelegate.m */; };
-		FBE3BA8D1B005AA100BC8173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BA8C1B005AA100BC8173 /* ViewController.m */; };
-		FBE3BA901B005AA100BC8173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3BA8E1B005AA100BC8173 /* Main.storyboard */; };
-		FBE3BA921B005AA100BC8173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE3BA911B005AA100BC8173 /* Images.xcassets */; };
-		FBE3BA951B005AA100BC8173 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE3BA931B005AA100BC8173 /* LaunchScreen.xib */; };
-		FBE3BAA11B005AA100BC8173 /* GameButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BAA01B005AA100BC8173 /* GameButtonTests.m */; };
-		FBE3BAAD1B005AE200BC8173 /* BLJGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */; };
+		C5CB8E6C1BF23AF3004B41EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB8E6B1BF23AF3004B41EE /* AppDelegate.swift */; };
+		C5CB8E6E1BF23AF3004B41EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB8E6D1BF23AF3004B41EE /* ViewController.swift */; };
+		C5CB8E711BF23AF3004B41EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CB8E6F1BF23AF3004B41EE /* Main.storyboard */; };
+		C5CB8E731BF23AF3004B41EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CB8E721BF23AF3004B41EE /* Assets.xcassets */; };
+		C5CB8E761BF23AF3004B41EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CB8E741BF23AF3004B41EE /* LaunchScreen.storyboard */; };
+		C5CB8E811BF23AF3004B41EE /* GameButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB8E801BF23AF3004B41EE /* GameButtonTests.swift */; };
+		C5CB8E901BF23BA1004B41EE /* UIButton+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB8E8F1BF23BA1004B41EE /* UIButton+Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FBE3BA9B1B005AA100BC8173 /* PBXContainerItemProxy */ = {
+		C5CB8E7D1BF23AF3004B41EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FBE3BA791B005AA100BC8173 /* Project object */;
+			containerPortal = C5CB8E601BF23AF3004B41EE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBE3BA801B005AA100BC8173;
+			remoteGlobalIDString = C5CB8E671BF23AF3004B41EE;
 			remoteInfo = GameButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FBE3BA811B005AA100BC8173 /* GameButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBE3BA851B005AA100BC8173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBE3BA861B005AA100BC8173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FBE3BA881B005AA100BC8173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FBE3BA891B005AA100BC8173 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FBE3BA8B1B005AA100BC8173 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FBE3BA8C1B005AA100BC8173 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FBE3BA8F1B005AA100BC8173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBE3BA911B005AA100BC8173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FBE3BA941B005AA100BC8173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FBE3BA9A1B005AA100BC8173 /* GameButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBE3BA9F1B005AA100BC8173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBE3BAA01B005AA100BC8173 /* GameButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameButtonTests.m; sourceTree = "<group>"; };
-		FBE3BAAB1B005AE200BC8173 /* BLJGameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLJGameButton.h; sourceTree = "<group>"; };
-		FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLJGameButton.m; sourceTree = "<group>"; };
+		C5CB8E681BF23AF3004B41EE /* GameButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CB8E6B1BF23AF3004B41EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5CB8E6D1BF23AF3004B41EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5CB8E701BF23AF3004B41EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5CB8E721BF23AF3004B41EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5CB8E751BF23AF3004B41EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5CB8E771BF23AF3004B41EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5CB8E7C1BF23AF3004B41EE /* GameButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CB8E801BF23AF3004B41EE /* GameButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonTests.swift; sourceTree = "<group>"; };
+		C5CB8E821BF23AF3004B41EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5CB8E8F1BF23BA1004B41EE /* UIButton+Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Game.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FBE3BA7E1B005AA100BC8173 /* Frameworks */ = {
+		C5CB8E651BF23AF3004B41EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE3BA971B005AA100BC8173 /* Frameworks */ = {
+		C5CB8E791BF23AF3004B41EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,71 +58,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FBE3BA781B005AA100BC8173 = {
+		C5CB8E5F1BF23AF3004B41EE = {
 			isa = PBXGroup;
 			children = (
-				FBE3BAAA1B005AE200BC8173 /* Classes */,
-				FBE3BA831B005AA100BC8173 /* GameButton */,
-				FBE3BA9D1B005AA100BC8173 /* GameButtonTests */,
-				FBE3BA821B005AA100BC8173 /* Products */,
+				C5CB8E8B1BF23B80004B41EE /* Classes */,
+				C5CB8E6A1BF23AF3004B41EE /* GameButton */,
+				C5CB8E7F1BF23AF3004B41EE /* GameButtonTests */,
+				C5CB8E691BF23AF3004B41EE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FBE3BA821B005AA100BC8173 /* Products */ = {
+		C5CB8E691BF23AF3004B41EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBE3BA811B005AA100BC8173 /* GameButton.app */,
-				FBE3BA9A1B005AA100BC8173 /* GameButtonTests.xctest */,
+				C5CB8E681BF23AF3004B41EE /* GameButton.app */,
+				C5CB8E7C1BF23AF3004B41EE /* GameButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBE3BA831B005AA100BC8173 /* GameButton */ = {
+		C5CB8E6A1BF23AF3004B41EE /* GameButton */ = {
 			isa = PBXGroup;
 			children = (
-				FBE3BA881B005AA100BC8173 /* AppDelegate.h */,
-				FBE3BA891B005AA100BC8173 /* AppDelegate.m */,
-				FBE3BA8B1B005AA100BC8173 /* ViewController.h */,
-				FBE3BA8C1B005AA100BC8173 /* ViewController.m */,
-				FBE3BA8E1B005AA100BC8173 /* Main.storyboard */,
-				FBE3BA911B005AA100BC8173 /* Images.xcassets */,
-				FBE3BA931B005AA100BC8173 /* LaunchScreen.xib */,
-				FBE3BA841B005AA100BC8173 /* Supporting Files */,
+				C5CB8E6B1BF23AF3004B41EE /* AppDelegate.swift */,
+				C5CB8E6D1BF23AF3004B41EE /* ViewController.swift */,
+				C5CB8E6F1BF23AF3004B41EE /* Main.storyboard */,
+				C5CB8E721BF23AF3004B41EE /* Assets.xcassets */,
+				C5CB8E741BF23AF3004B41EE /* LaunchScreen.storyboard */,
+				C5CB8E771BF23AF3004B41EE /* Info.plist */,
 			);
 			path = GameButton;
 			sourceTree = "<group>";
 		};
-		FBE3BA841B005AA100BC8173 /* Supporting Files */ = {
+		C5CB8E7F1BF23AF3004B41EE /* GameButtonTests */ = {
 			isa = PBXGroup;
 			children = (
-				FBE3BA851B005AA100BC8173 /* Info.plist */,
-				FBE3BA861B005AA100BC8173 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FBE3BA9D1B005AA100BC8173 /* GameButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				FBE3BAA01B005AA100BC8173 /* GameButtonTests.m */,
-				FBE3BA9E1B005AA100BC8173 /* Supporting Files */,
+				C5CB8E801BF23AF3004B41EE /* GameButtonTests.swift */,
+				C5CB8E821BF23AF3004B41EE /* Info.plist */,
 			);
 			path = GameButtonTests;
 			sourceTree = "<group>";
 		};
-		FBE3BA9E1B005AA100BC8173 /* Supporting Files */ = {
+		C5CB8E8B1BF23B80004B41EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FBE3BA9F1B005AA100BC8173 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FBE3BAAA1B005AE200BC8173 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FBE3BAAB1B005AE200BC8173 /* BLJGameButton.h */,
-				FBE3BAAC1B005AE200BC8173 /* BLJGameButton.m */,
+				C5CB8E8F1BF23BA1004B41EE /* UIButton+Game.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -135,13 +110,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBE3BA801B005AA100BC8173 /* GameButton */ = {
+		C5CB8E671BF23AF3004B41EE /* GameButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBE3BAA41B005AA100BC8173 /* Build configuration list for PBXNativeTarget "GameButton" */;
+			buildConfigurationList = C5CB8E851BF23AF3004B41EE /* Build configuration list for PBXNativeTarget "GameButton" */;
 			buildPhases = (
-				FBE3BA7D1B005AA100BC8173 /* Sources */,
-				FBE3BA7E1B005AA100BC8173 /* Frameworks */,
-				FBE3BA7F1B005AA100BC8173 /* Resources */,
+				C5CB8E641BF23AF3004B41EE /* Sources */,
+				C5CB8E651BF23AF3004B41EE /* Frameworks */,
+				C5CB8E661BF23AF3004B41EE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -149,46 +124,47 @@
 			);
 			name = GameButton;
 			productName = GameButton;
-			productReference = FBE3BA811B005AA100BC8173 /* GameButton.app */;
+			productReference = C5CB8E681BF23AF3004B41EE /* GameButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FBE3BA991B005AA100BC8173 /* GameButtonTests */ = {
+		C5CB8E7B1BF23AF3004B41EE /* GameButtonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBE3BAA71B005AA100BC8173 /* Build configuration list for PBXNativeTarget "GameButtonTests" */;
+			buildConfigurationList = C5CB8E881BF23AF3004B41EE /* Build configuration list for PBXNativeTarget "GameButtonTests" */;
 			buildPhases = (
-				FBE3BA961B005AA100BC8173 /* Sources */,
-				FBE3BA971B005AA100BC8173 /* Frameworks */,
-				FBE3BA981B005AA100BC8173 /* Resources */,
+				C5CB8E781BF23AF3004B41EE /* Sources */,
+				C5CB8E791BF23AF3004B41EE /* Frameworks */,
+				C5CB8E7A1BF23AF3004B41EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FBE3BA9C1B005AA100BC8173 /* PBXTargetDependency */,
+				C5CB8E7E1BF23AF3004B41EE /* PBXTargetDependency */,
 			);
 			name = GameButtonTests;
 			productName = GameButtonTests;
-			productReference = FBE3BA9A1B005AA100BC8173 /* GameButtonTests.xctest */;
+			productReference = C5CB8E7C1BF23AF3004B41EE /* GameButtonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FBE3BA791B005AA100BC8173 /* Project object */ = {
+		C5CB8E601BF23AF3004B41EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Brandon Jenniges";
 				TargetAttributes = {
-					FBE3BA801B005AA100BC8173 = {
-						CreatedOnToolsVersion = 6.3.1;
+					C5CB8E671BF23AF3004B41EE = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
-					FBE3BA991B005AA100BC8173 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = FBE3BA801B005AA100BC8173;
+					C5CB8E7B1BF23AF3004B41EE = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C5CB8E671BF23AF3004B41EE;
 					};
 				};
 			};
-			buildConfigurationList = FBE3BA7C1B005AA100BC8173 /* Build configuration list for PBXProject "GameButton" */;
+			buildConfigurationList = C5CB8E631BF23AF3004B41EE /* Build configuration list for PBXProject "GameButton" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -196,29 +172,29 @@
 				en,
 				Base,
 			);
-			mainGroup = FBE3BA781B005AA100BC8173;
-			productRefGroup = FBE3BA821B005AA100BC8173 /* Products */;
+			mainGroup = C5CB8E5F1BF23AF3004B41EE;
+			productRefGroup = C5CB8E691BF23AF3004B41EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBE3BA801B005AA100BC8173 /* GameButton */,
-				FBE3BA991B005AA100BC8173 /* GameButtonTests */,
+				C5CB8E671BF23AF3004B41EE /* GameButton */,
+				C5CB8E7B1BF23AF3004B41EE /* GameButtonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FBE3BA7F1B005AA100BC8173 /* Resources */ = {
+		C5CB8E661BF23AF3004B41EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE3BA901B005AA100BC8173 /* Main.storyboard in Resources */,
-				FBE3BA951B005AA100BC8173 /* LaunchScreen.xib in Resources */,
-				FBE3BA921B005AA100BC8173 /* Images.xcassets in Resources */,
+				C5CB8E761BF23AF3004B41EE /* LaunchScreen.storyboard in Resources */,
+				C5CB8E731BF23AF3004B41EE /* Assets.xcassets in Resources */,
+				C5CB8E711BF23AF3004B41EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE3BA981B005AA100BC8173 /* Resources */ = {
+		C5CB8E7A1BF23AF3004B41EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,56 +204,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FBE3BA7D1B005AA100BC8173 /* Sources */ = {
+		C5CB8E641BF23AF3004B41EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE3BA8D1B005AA100BC8173 /* ViewController.m in Sources */,
-				FBE3BAAD1B005AE200BC8173 /* BLJGameButton.m in Sources */,
-				FBE3BA8A1B005AA100BC8173 /* AppDelegate.m in Sources */,
-				FBE3BA871B005AA100BC8173 /* main.m in Sources */,
+				C5CB8E901BF23BA1004B41EE /* UIButton+Game.swift in Sources */,
+				C5CB8E6E1BF23AF3004B41EE /* ViewController.swift in Sources */,
+				C5CB8E6C1BF23AF3004B41EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE3BA961B005AA100BC8173 /* Sources */ = {
+		C5CB8E781BF23AF3004B41EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE3BAA11B005AA100BC8173 /* GameButtonTests.m in Sources */,
+				C5CB8E811BF23AF3004B41EE /* GameButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FBE3BA9C1B005AA100BC8173 /* PBXTargetDependency */ = {
+		C5CB8E7E1BF23AF3004B41EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FBE3BA801B005AA100BC8173 /* GameButton */;
-			targetProxy = FBE3BA9B1B005AA100BC8173 /* PBXContainerItemProxy */;
+			target = C5CB8E671BF23AF3004B41EE /* GameButton */;
+			targetProxy = C5CB8E7D1BF23AF3004B41EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FBE3BA8E1B005AA100BC8173 /* Main.storyboard */ = {
+		C5CB8E6F1BF23AF3004B41EE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBE3BA8F1B005AA100BC8173 /* Base */,
+				C5CB8E701BF23AF3004B41EE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FBE3BA931B005AA100BC8173 /* LaunchScreen.xib */ = {
+		C5CB8E741BF23AF3004B41EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBE3BA941B005AA100BC8173 /* Base */,
+				C5CB8E751BF23AF3004B41EE /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FBE3BAA21B005AA100BC8173 /* Debug */ = {
+		C5CB8E831BF23AF3004B41EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,8 +271,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -306,21 +282,21 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		FBE3BAA31B005AA100BC8173 /* Release */ = {
+		C5CB8E841BF23AF3004B41EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,62 +326,56 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FBE3BAA51B005AA100BC8173 /* Debug */ = {
+		C5CB8E861BF23AF3004B41EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GameButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.GameButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FBE3BAA61B005AA100BC8173 /* Release */ = {
+		C5CB8E871BF23AF3004B41EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GameButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.GameButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		FBE3BAA81B005AA100BC8173 /* Debug */ = {
+		C5CB8E891BF23AF3004B41EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = GameButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.GameButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameButton.app/GameButton";
 			};
 			name = Debug;
 		};
-		FBE3BAA91B005AA100BC8173 /* Release */ = {
+		C5CB8E8A1BF23AF3004B41EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = GameButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.GameButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameButton.app/GameButton";
 			};
@@ -414,34 +384,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBE3BA7C1B005AA100BC8173 /* Build configuration list for PBXProject "GameButton" */ = {
+		C5CB8E631BF23AF3004B41EE /* Build configuration list for PBXProject "GameButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBE3BAA21B005AA100BC8173 /* Debug */,
-				FBE3BAA31B005AA100BC8173 /* Release */,
+				C5CB8E831BF23AF3004B41EE /* Debug */,
+				C5CB8E841BF23AF3004B41EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBE3BAA41B005AA100BC8173 /* Build configuration list for PBXNativeTarget "GameButton" */ = {
+		C5CB8E851BF23AF3004B41EE /* Build configuration list for PBXNativeTarget "GameButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBE3BAA51B005AA100BC8173 /* Debug */,
-				FBE3BAA61B005AA100BC8173 /* Release */,
+				C5CB8E861BF23AF3004B41EE /* Debug */,
+				C5CB8E871BF23AF3004B41EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		FBE3BAA71B005AA100BC8173 /* Build configuration list for PBXNativeTarget "GameButtonTests" */ = {
+		C5CB8E881BF23AF3004B41EE /* Build configuration list for PBXNativeTarget "GameButtonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBE3BAA81B005AA100BC8173 /* Debug */,
-				FBE3BAA91B005AA100BC8173 /* Release */,
+				C5CB8E891BF23AF3004B41EE /* Debug */,
+				C5CB8E8A1BF23AF3004B41EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FBE3BA791B005AA100BC8173 /* Project object */;
+	rootObject = C5CB8E601BF23AF3004B41EE /* Project object */;
 }
