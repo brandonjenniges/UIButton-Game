@@ -8,23 +8,11 @@ Pre-requisites
 Installation
 ------------
 
-There are two ways to use **UIButton+Game** in your project:
-- using CocoaPods
-- copying all the files into your project
-
-#### Installation with CocoaPods
-
-[CocoaPods](http://cocoapods.org/) is a dependency manager, which automates and simplifies the process of using 3rd-party libraries in your projects. See the [Get Started](http://cocoapods.org/#get_started) section for more details.
-
-#### Podfile
-```
-pod 'BLJGameButton'
-```
-
 #### Copying files into project
 ```
 UIButton+Game.swift
 ```  
+
 Basic usage
 -----------
 
