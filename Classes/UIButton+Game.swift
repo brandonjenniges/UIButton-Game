@@ -1,5 +1,4 @@
 //
-//  Created by Brandon Jenniges on 11/10/15.
 //  Copyright © 2015 Brandon Jenniges. All rights reserved.
 //
 
