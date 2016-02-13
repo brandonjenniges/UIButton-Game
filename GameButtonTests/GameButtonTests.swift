@@ -1,9 +1,5 @@
 //
-//  GameButtonTests.swift
-//  GameButtonTests
-//
-//  Created by Brandon Jenniges on 11/10/15.
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import XCTest
@@ -13,24 +9,43 @@ class GameButtonTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCorrectButton() {
+        let readyExpectation = expectationWithDescription("ready")
+        var string = ""
+        let button = UIButton()
+        button.correct { () -> () in
+            string = "Correct"
+            readyExpectation.fulfill()
+        }
+        waitForExpectationsWithTimeout(3.0) { (error: NSError?) -> Void in
+            XCTAssertTrue(string == "Correct", "Expected 'Correct' but value was \(string)")
+        }
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testIncorrectButton() {
+        let readyExpectation = expectationWithDescription("ready")
+        var string = ""
+        let button = UIButton()
+        button.incorrect { () -> () in
+            string = "Wrong"
+            readyExpectation.fulfill()
         }
+        waitForExpectationsWithTimeout(3.0) { (error: NSError?) -> Void in
+            XCTAssertTrue(string == "Wrong", "Expected 'Wrong' but value was \(string)")
+        }
+    }
+    
+    func testNonClosure() {
+        let button = UIButton()
+        button.correct()
+        sleep(2)
+        button.incorrect()
     }
     
 }

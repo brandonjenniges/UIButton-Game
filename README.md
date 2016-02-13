@@ -1,4 +1,7 @@
 # UIButton+Game
+
+[![Build Status](https://travis-ci.org/steveholt55/UIButton-Game.svg)](https://travis-ci.org/steveholt55/UIButton-Game)
+
 **UIButton+Game** is a UIButton extension that makes it easy to animate a button with a pulse animation after a correct guess and a shake animation after an incorrect guess. 
 
 Pre-requisites
