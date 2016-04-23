@@ -16,6 +16,12 @@ Installation
 UIButton+Game.swift
 ```  
 
+Preview
+-----------
+
+![Preview](preview/preview.gif)
+
+
 Basic usage
 -----------
 
