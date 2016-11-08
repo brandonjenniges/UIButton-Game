@@ -15,10 +15,10 @@ public extension UIButton {
         correct(nil)
     }
     
-    public func correct( completionClosure:(()->())?) {
+    public func correct( _ completionClosure:(()->())?) {
         
-        let originalColor = self.titleColorForState(.Normal)
-        self.setTitleColor(positiveColor, forState: .Normal)
+        let originalColor = self.titleColor(for: UIControlState())
+        self.setTitleColor(positiveColor, for: UIControlState())
         
         let animationDuration = positiveAnimationDuration
         let scale:CGFloat = 1.2
@@ -27,16 +27,16 @@ public extension UIButton {
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         animation.duration = animationDuration
         animation.repeatCount = 1
-        animation.removedOnCompletion = true
-        animation.toValue = NSValue(CATransform3D: CATransform3DMakeScale(scale, scale, 1.0))
-        self.layer.addAnimation(animation, forKey: nil)
+        animation.isRemovedOnCompletion = true
+        animation.toValue = NSValue(caTransform3D: CATransform3DMakeScale(scale, scale, 1.0))
+        self.layer.add(animation, forKey: nil)
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(animationDuration * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
+        let delayTime = DispatchTime.now() + Double(Int64(animationDuration * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
             if let completionClosure = completionClosure {
                 completionClosure()
             }
-            self.setTitleColor(originalColor, forState: .Normal)
+            self.setTitleColor(originalColor, for: UIControlState())
         }
     }
     
@@ -44,31 +44,31 @@ public extension UIButton {
         incorrect(nil)
     }
     
-    func incorrect( completionClosure:(()->())?) {
+    func incorrect( _ completionClosure:(()->())?) {
         
-        let originalColor = self.titleColorForState(.Normal)
-        self.setTitleColor(negativeColor, forState: .Normal)
+        let originalColor = self.titleColor(for: UIControlState())
+        self.setTitleColor(negativeColor, for: UIControlState())
         
         let animationDuration = negativeAnimationDuration
         let offsetX:CGFloat = 10.0
         
         let animation = CAKeyframeAnimation(keyPath: "transform")
         
-        let shiftLeftTransform = NSValue(CATransform3D: CATransform3DMakeTranslation(-offsetX, 0, 0))
-        let shiftRightTransform = NSValue(CATransform3D: CATransform3DMakeTranslation(offsetX, 0, 0))
+        let shiftLeftTransform = NSValue(caTransform3D: CATransform3DMakeTranslation(-offsetX, 0, 0))
+        let shiftRightTransform = NSValue(caTransform3D: CATransform3DMakeTranslation(offsetX, 0, 0))
         
         animation.values = [shiftLeftTransform, shiftRightTransform]
         animation.autoreverses = true
         animation.repeatCount = 2.0
         animation.duration = animationDuration / 4.0
-        self.layer.addAnimation(animation, forKey: nil)
+        self.layer.add(animation, forKey: nil)
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(animationDuration * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
+        let delayTime = DispatchTime.now() + Double(Int64(animationDuration * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
             if let completionClosure = completionClosure {
                 completionClosure()
             }
-            self.setTitleColor(originalColor, forState: .Normal)
+            self.setTitleColor(originalColor, for: UIControlState())
         }
     }
 }

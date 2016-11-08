@@ -6,7 +6,7 @@
 
 Pre-requisites
 --------------
-- iOS 8 and Swift 2
+- iOS 8 and Swift 3
 
 Installation
 ------------
@@ -28,11 +28,11 @@ Basic usage
 ```swift
 let gameButton = UIButton()
 
-gameButton.correct { () -> () in
+gameButton.correct { in
 	//Do something following animation
 }
 
-gameButton.incorrect { () -> () in
+gameButton.incorrect { in
 	//Do something following animation
 }
 

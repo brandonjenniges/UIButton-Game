@@ -16,27 +16,27 @@ class GameButtonTests: XCTestCase {
     }
     
     func testCorrectButton() {
-        let readyExpectation = expectationWithDescription("ready")
+        let readyExpectation = expectation(description: "ready")
         var string = ""
         let button = UIButton()
         button.correct { () -> () in
             string = "Correct"
             readyExpectation.fulfill()
         }
-        waitForExpectationsWithTimeout(3.0) { (error: NSError?) -> Void in
+        waitForExpectations(timeout: 3.0) { (error: NSError?) -> Void in
             XCTAssertTrue(string == "Correct", "Expected 'Correct' but value was \(string)")
         }
     }
     
     func testIncorrectButton() {
-        let readyExpectation = expectationWithDescription("ready")
+        let readyExpectation = expectation(description: "ready")
         var string = ""
         let button = UIButton()
         button.incorrect { () -> () in
             string = "Wrong"
             readyExpectation.fulfill()
         }
-        waitForExpectationsWithTimeout(3.0) { (error: NSError?) -> Void in
+        waitForExpectations(timeout: 3.0) { (error: NSError?) -> Void in
             XCTAssertTrue(string == "Wrong", "Expected 'Wrong' but value was \(string)")
         }
     }

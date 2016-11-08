@@ -10,14 +10,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var correctButton: UIButton!
     @IBOutlet weak var wrongButton: UIButton!
 
-    @IBAction func correctButtonPress(sender: AnyObject) {
-        correctButton.correct { () -> () in
+    @IBAction func correctButtonPress(_ sender: AnyObject) {
+        correctButton.correct {
             self.label.text = "Correct"
         }
     }
     
-    @IBAction func incorrectButtonPress(sender: AnyObject) {
-        wrongButton.incorrect { () -> () in
+    @IBAction func incorrectButtonPress(_ sender: AnyObject) {
+        wrongButton.incorrect { 
             self.label.text = "Wrong"
         }
     }
