@@ -28,11 +28,11 @@ Basic usage
 ```swift
 let gameButton = UIButton()
 
-gameButton.correct { in
+gameButton.correct {
 	//Do something following animation
 }
 
-gameButton.incorrect { in
+gameButton.incorrect {
 	//Do something following animation
 }
 
