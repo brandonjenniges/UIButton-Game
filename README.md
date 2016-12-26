@@ -38,6 +38,22 @@ gameButton.incorrect {
 
 ```
 
+Customization
+-----------
+
+```swift
+let gameButton = UIButton()
+
+// Color
+gameButton.positiveColor = .green // Color on correct guess
+gameButton.negativeColor = .red   // Color on incorrect guess 
+
+// Animation Duration
+gameButton.positiveAnimationDuration = 1.0 // How long to show correct animation
+gameButton.negativeAnimationDuration = 1.0 // How long to show incorrect animation 
+
+```
+
 License
 ---------------
 This project is released under the MIT license. See LICENSE for details.
