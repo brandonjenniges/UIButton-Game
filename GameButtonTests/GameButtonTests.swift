@@ -23,7 +23,7 @@ class GameButtonTests: XCTestCase {
             string = "Correct"
             readyExpectation.fulfill()
         }
-        waitForExpectations(timeout: 3.0) { (error: NSError?) -> Void in
+        waitForExpectations(timeout: 3.0) { (error: Error?) -> Void in
             XCTAssertTrue(string == "Correct", "Expected 'Correct' but value was \(string)")
         }
     }
@@ -36,7 +36,7 @@ class GameButtonTests: XCTestCase {
             string = "Wrong"
             readyExpectation.fulfill()
         }
-        waitForExpectations(timeout: 3.0) { (error: NSError?) -> Void in
+        waitForExpectations(timeout: 3.0) { (error: Error?) -> Void in
             XCTAssertTrue(string == "Wrong", "Expected 'Wrong' but value was \(string)")
         }
     }
